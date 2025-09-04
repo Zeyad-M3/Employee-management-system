@@ -1,22 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Data;
+using System.Runtime.InteropServices;
+using DataAccessLayer;
 
-namespace Employee_management_system
+namespace BusinessLayer
 {
-    internal static class Program
+    public class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        public static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Console.WriteLine("Hello, World!");
+            // Example usage of the DataAccess class
+            var dataAccess = new DataAccess();
+            dataAccess.ConnectToDatabase();
+        }
+    }
+    public class DataAccess
+    {
+        public void ConnectToDatabase()
+        {
+            // Simulate a database connection
+            Console.WriteLine("Connecting to the database...");
         }
     }
 }
