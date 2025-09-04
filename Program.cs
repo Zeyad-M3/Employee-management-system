@@ -1,9 +1,10 @@
-﻿using System;
+﻿
+
+using System;
 using System.Data;
 using System.Runtime.InteropServices;
-using DataAccessLayer;
 
-namespace BusinessLayer
+namespace DataAccessLayer
 {
     public class Program
     {
